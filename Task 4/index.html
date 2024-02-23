@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Text Toggle</title>
+<style>
+  .btn {
+    padding: 20px 30px;
+    font-size: 19px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<button id="toggleBtn" class="btn" onclick="toggleText()">Hello</button>
+
+<script>
+  function toggleText() {
+    var button = document.getElementById("toggleBtn");
+    if (button.innerHTML === "Hello") {
+      button.innerHTML = "Bye";
+    } else {
+      button.innerHTML = "Hello";
+    }
+  }
+</script>
+
+</body>
+</html>

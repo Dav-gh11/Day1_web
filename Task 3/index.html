@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show/Hide Button</title>
+    <style>
+      #myDiv {
+        display: none;
+        padding: 10px;
+        background-color: #f0f0f0;
+        margin-top: 10px;
+      }
+
+      #toggleButton {
+        padding: 8px 16px;
+        background-color: #4778ac;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="toggleButton">Show/Hide</button>
+
+    <div id="myDiv">Hi i'm hiding here</div>
+
+    <script>
+      document
+        .getElementById("toggleButton")
+        .addEventListener("click", function () {
+          var div = document.getElementById("myDiv");
+          if (div.style.display === "none") {
+            div.style.display = "block";
+          } else {
+            div.style.display = "none";
+          }
+        });
+    </script>
+  </body>
+</html>
